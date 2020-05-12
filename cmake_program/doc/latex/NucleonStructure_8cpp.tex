@@ -1,0 +1,200 @@
+\hypertarget{NucleonStructure_8cpp}{}\doxysection{src/\+Nucleon\+Structure.cpp File Reference}
+\label{NucleonStructure_8cpp}\index{src/NucleonStructure.cpp@{src/NucleonStructure.cpp}}
+{\ttfamily \#include \char`\"{}Nucleon\+Structure.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}constants.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$cstdarg$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include \char`\"{}mstwpdf.\+h\char`\"{}}\newline
+Include dependency graph for Nucleon\+Structure.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{NucleonStructure_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{NucleonStructure_8cpp_abdad7ec22b27f6eb77abe04b4a52abfb}{f1f2in09\+\_\+}} (double $\ast$Z, double $\ast$A, double $\ast$Q\+SQ, double $\ast$Wsq, double $\ast$F1, double $\ast$F2, double $\ast$rc)
+\item 
+void \mbox{\hyperlink{NucleonStructure_8cpp_a61d28070932efbb4d72e408bdf84584c}{alekhin\+\_\+}} (double $\ast$xb, double $\ast$q2, double P\+D\+FS\mbox{[}22\mbox{]}, int $\ast$I\+P\+AR, int $\ast$I\+C\+OL)
+\item 
+double \mbox{\hyperlink{NucleonStructure_8cpp_a560e076cc2d48abea68b991823fc2656}{f2\+\_\+ctq\+\_\+}} (int $\ast$proton, double $\ast$x, double $\ast$Q2)
+\item 
+void \mbox{\hyperlink{NucleonStructure_8cpp_a02fb6fc916a4132223688945af5172e1}{parpol\+\_\+}} (int $\ast$iset, double $\ast$x, double $\ast$q2, double $\ast$u, double $\ast$d, double $\ast$ub, double $\ast$db, double $\ast$st, double $\ast$gl, double $\ast$g1p, double $\ast$g1n)
+\item 
+double \mbox{\hyperlink{NucleonStructure_8cpp_a211817047a2c90183f589d8418c07fce}{f1p\+\_\+hmrs\+\_\+}} (double $\ast$x, double $\ast$Q2)
+\item 
+double \mbox{\hyperlink{NucleonStructure_8cpp_a0bca033ff01c6972f3ef1d6fcc51c5e1}{f1n\+\_\+hmrs\+\_\+}} (double $\ast$x, double $\ast$Q2)
+\item 
+double \mbox{\hyperlink{NucleonStructure_8cpp_aa8a59b6fcde01dbd5ec146338ef53772}{f2n\+\_\+hmrs\+\_\+}} (double $\ast$x, double $\ast$Q2)
+\item 
+double \mbox{\hyperlink{NucleonStructure_8cpp_ac7a1856bb1a8c9799b7b0d7f5a069594}{f2p\+\_\+hmrs\+\_\+}} (double $\ast$x, double $\ast$Q2)
+\item 
+double \mbox{\hyperlink{NucleonStructure_8cpp_ab7c07b063f7e00abb154c369a5b6e49d}{r1990\+\_\+}} (double $\ast$x, double $\ast$q2)
+\item 
+double \mbox{\hyperlink{NucleonStructure_8cpp_a67f0523690767eb52e34e2f2c89cf3e1}{r1998\+\_\+}} (double $\ast$x, double $\ast$q2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>char \mbox{\hyperlink{NucleonStructure_8cpp_ad4f9974cb2ea878ff1c41c76e5edf531}{homedir}} \mbox{[}128\mbox{]}\\
+\>char \mbox{\hyperlink{NucleonStructure_8cpp_a4f3dbf0ce77c258068a930d1a5e65f77}{a09file1}} \mbox{[}128\mbox{]}\\
+\>char \mbox{\hyperlink{NucleonStructure_8cpp_a32fa96f8fa26f33b7484621213182444}{a09file2}} \mbox{[}128\mbox{]}\\
+\} \mbox{\hyperlink{NucleonStructure_8cpp_ab41161d2cd1f98b48e9cdff936a2c295}{dir\_}}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>char \mbox{\hyperlink{NucleonStructure_8cpp_a2abe1147157c1e8f5a75633660df6b3e}{fileslo}} \mbox{[}128\mbox{]}\\
+\} \mbox{\hyperlink{NucleonStructure_8cpp_a8b89d7d00e8976aaae5078b8e99279b3}{grsvdir\_}}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>int \mbox{\hyperlink{NucleonStructure_8cpp_ac675972645a55e9fb8101a7a2ed6ffc1}{iini}} =7\\
+\} \mbox{\hyperlink{NucleonStructure_8cpp_a04b7a2a53a4c71fdc3e6ac38dca14aa9}{intini\_}}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{NucleonStructure_8cpp_a61d28070932efbb4d72e408bdf84584c}\label{NucleonStructure_8cpp_a61d28070932efbb4d72e408bdf84584c}} 
+\index{NucleonStructure.cpp@{NucleonStructure.cpp}!alekhin\_@{alekhin\_}}
+\index{alekhin\_@{alekhin\_}!NucleonStructure.cpp@{NucleonStructure.cpp}}
+\doxysubsubsection{\texorpdfstring{alekhin\_()}{alekhin\_()}}
+{\footnotesize\ttfamily void alekhin\+\_\+ (\begin{DoxyParamCaption}\item[{double $\ast$}]{xb,  }\item[{double $\ast$}]{q2,  }\item[{double}]{P\+D\+FS\mbox{[}22\mbox{]},  }\item[{int $\ast$}]{I\+P\+AR,  }\item[{int $\ast$}]{I\+C\+OL }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{NucleonStructure_8cpp_abdad7ec22b27f6eb77abe04b4a52abfb}\label{NucleonStructure_8cpp_abdad7ec22b27f6eb77abe04b4a52abfb}} 
+\index{NucleonStructure.cpp@{NucleonStructure.cpp}!f1f2in09\_@{f1f2in09\_}}
+\index{f1f2in09\_@{f1f2in09\_}!NucleonStructure.cpp@{NucleonStructure.cpp}}
+\doxysubsubsection{\texorpdfstring{f1f2in09\_()}{f1f2in09\_()}}
+{\footnotesize\ttfamily void f1f2in09\+\_\+ (\begin{DoxyParamCaption}\item[{double $\ast$}]{Z,  }\item[{double $\ast$}]{A,  }\item[{double $\ast$}]{Q\+SQ,  }\item[{double $\ast$}]{Wsq,  }\item[{double $\ast$}]{F1,  }\item[{double $\ast$}]{F2,  }\item[{double $\ast$}]{rc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{NucleonStructure_8cpp_a0bca033ff01c6972f3ef1d6fcc51c5e1}\label{NucleonStructure_8cpp_a0bca033ff01c6972f3ef1d6fcc51c5e1}} 
+\index{NucleonStructure.cpp@{NucleonStructure.cpp}!f1n\_hmrs\_@{f1n\_hmrs\_}}
+\index{f1n\_hmrs\_@{f1n\_hmrs\_}!NucleonStructure.cpp@{NucleonStructure.cpp}}
+\doxysubsubsection{\texorpdfstring{f1n\_hmrs\_()}{f1n\_hmrs\_()}}
+{\footnotesize\ttfamily double f1n\+\_\+hmrs\+\_\+ (\begin{DoxyParamCaption}\item[{double $\ast$}]{x,  }\item[{double $\ast$}]{Q2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{NucleonStructure_8cpp_a211817047a2c90183f589d8418c07fce}\label{NucleonStructure_8cpp_a211817047a2c90183f589d8418c07fce}} 
+\index{NucleonStructure.cpp@{NucleonStructure.cpp}!f1p\_hmrs\_@{f1p\_hmrs\_}}
+\index{f1p\_hmrs\_@{f1p\_hmrs\_}!NucleonStructure.cpp@{NucleonStructure.cpp}}
+\doxysubsubsection{\texorpdfstring{f1p\_hmrs\_()}{f1p\_hmrs\_()}}
+{\footnotesize\ttfamily double f1p\+\_\+hmrs\+\_\+ (\begin{DoxyParamCaption}\item[{double $\ast$}]{x,  }\item[{double $\ast$}]{Q2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{NucleonStructure_8cpp_a560e076cc2d48abea68b991823fc2656}\label{NucleonStructure_8cpp_a560e076cc2d48abea68b991823fc2656}} 
+\index{NucleonStructure.cpp@{NucleonStructure.cpp}!f2\_ctq\_@{f2\_ctq\_}}
+\index{f2\_ctq\_@{f2\_ctq\_}!NucleonStructure.cpp@{NucleonStructure.cpp}}
+\doxysubsubsection{\texorpdfstring{f2\_ctq\_()}{f2\_ctq\_()}}
+{\footnotesize\ttfamily double f2\+\_\+ctq\+\_\+ (\begin{DoxyParamCaption}\item[{int $\ast$}]{proton,  }\item[{double $\ast$}]{x,  }\item[{double $\ast$}]{Q2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{NucleonStructure_8cpp_aa8a59b6fcde01dbd5ec146338ef53772}\label{NucleonStructure_8cpp_aa8a59b6fcde01dbd5ec146338ef53772}} 
+\index{NucleonStructure.cpp@{NucleonStructure.cpp}!f2n\_hmrs\_@{f2n\_hmrs\_}}
+\index{f2n\_hmrs\_@{f2n\_hmrs\_}!NucleonStructure.cpp@{NucleonStructure.cpp}}
+\doxysubsubsection{\texorpdfstring{f2n\_hmrs\_()}{f2n\_hmrs\_()}}
+{\footnotesize\ttfamily double f2n\+\_\+hmrs\+\_\+ (\begin{DoxyParamCaption}\item[{double $\ast$}]{x,  }\item[{double $\ast$}]{Q2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{NucleonStructure_8cpp_ac7a1856bb1a8c9799b7b0d7f5a069594}\label{NucleonStructure_8cpp_ac7a1856bb1a8c9799b7b0d7f5a069594}} 
+\index{NucleonStructure.cpp@{NucleonStructure.cpp}!f2p\_hmrs\_@{f2p\_hmrs\_}}
+\index{f2p\_hmrs\_@{f2p\_hmrs\_}!NucleonStructure.cpp@{NucleonStructure.cpp}}
+\doxysubsubsection{\texorpdfstring{f2p\_hmrs\_()}{f2p\_hmrs\_()}}
+{\footnotesize\ttfamily double f2p\+\_\+hmrs\+\_\+ (\begin{DoxyParamCaption}\item[{double $\ast$}]{x,  }\item[{double $\ast$}]{Q2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{NucleonStructure_8cpp_a02fb6fc916a4132223688945af5172e1}\label{NucleonStructure_8cpp_a02fb6fc916a4132223688945af5172e1}} 
+\index{NucleonStructure.cpp@{NucleonStructure.cpp}!parpol\_@{parpol\_}}
+\index{parpol\_@{parpol\_}!NucleonStructure.cpp@{NucleonStructure.cpp}}
+\doxysubsubsection{\texorpdfstring{parpol\_()}{parpol\_()}}
+{\footnotesize\ttfamily void parpol\+\_\+ (\begin{DoxyParamCaption}\item[{int $\ast$}]{iset,  }\item[{double $\ast$}]{x,  }\item[{double $\ast$}]{q2,  }\item[{double $\ast$}]{u,  }\item[{double $\ast$}]{d,  }\item[{double $\ast$}]{ub,  }\item[{double $\ast$}]{db,  }\item[{double $\ast$}]{st,  }\item[{double $\ast$}]{gl,  }\item[{double $\ast$}]{g1p,  }\item[{double $\ast$}]{g1n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{NucleonStructure_8cpp_ab7c07b063f7e00abb154c369a5b6e49d}\label{NucleonStructure_8cpp_ab7c07b063f7e00abb154c369a5b6e49d}} 
+\index{NucleonStructure.cpp@{NucleonStructure.cpp}!r1990\_@{r1990\_}}
+\index{r1990\_@{r1990\_}!NucleonStructure.cpp@{NucleonStructure.cpp}}
+\doxysubsubsection{\texorpdfstring{r1990\_()}{r1990\_()}}
+{\footnotesize\ttfamily double r1990\+\_\+ (\begin{DoxyParamCaption}\item[{double $\ast$}]{x,  }\item[{double $\ast$}]{q2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{NucleonStructure_8cpp_a67f0523690767eb52e34e2f2c89cf3e1}\label{NucleonStructure_8cpp_a67f0523690767eb52e34e2f2c89cf3e1}} 
+\index{NucleonStructure.cpp@{NucleonStructure.cpp}!r1998\_@{r1998\_}}
+\index{r1998\_@{r1998\_}!NucleonStructure.cpp@{NucleonStructure.cpp}}
+\doxysubsubsection{\texorpdfstring{r1998\_()}{r1998\_()}}
+{\footnotesize\ttfamily double r1998\+\_\+ (\begin{DoxyParamCaption}\item[{double $\ast$}]{x,  }\item[{double $\ast$}]{q2 }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{NucleonStructure_8cpp_a4f3dbf0ce77c258068a930d1a5e65f77}\label{NucleonStructure_8cpp_a4f3dbf0ce77c258068a930d1a5e65f77}} 
+\index{NucleonStructure.cpp@{NucleonStructure.cpp}!a09file1@{a09file1}}
+\index{a09file1@{a09file1}!NucleonStructure.cpp@{NucleonStructure.cpp}}
+\doxysubsubsection{\texorpdfstring{a09file1}{a09file1}}
+{\footnotesize\ttfamily char a09file1\mbox{[}128\mbox{]}}
+
+
+
+Definition at line 26 of file Nucleon\+Structure.\+cpp.
+
+\mbox{\Hypertarget{NucleonStructure_8cpp_a32fa96f8fa26f33b7484621213182444}\label{NucleonStructure_8cpp_a32fa96f8fa26f33b7484621213182444}} 
+\index{NucleonStructure.cpp@{NucleonStructure.cpp}!a09file2@{a09file2}}
+\index{a09file2@{a09file2}!NucleonStructure.cpp@{NucleonStructure.cpp}}
+\doxysubsubsection{\texorpdfstring{a09file2}{a09file2}}
+{\footnotesize\ttfamily char a09file2\mbox{[}128\mbox{]}}
+
+
+
+Definition at line 27 of file Nucleon\+Structure.\+cpp.
+
+\mbox{\Hypertarget{NucleonStructure_8cpp_ab41161d2cd1f98b48e9cdff936a2c295}\label{NucleonStructure_8cpp_ab41161d2cd1f98b48e9cdff936a2c295}} 
+\index{NucleonStructure.cpp@{NucleonStructure.cpp}!dir\_@{dir\_}}
+\index{dir\_@{dir\_}!NucleonStructure.cpp@{NucleonStructure.cpp}}
+\doxysubsubsection{\texorpdfstring{dir\_}{dir\_}}
+{\footnotesize\ttfamily struct \{ ... \}  dir\+\_\+}
+
+\mbox{\Hypertarget{NucleonStructure_8cpp_a2abe1147157c1e8f5a75633660df6b3e}\label{NucleonStructure_8cpp_a2abe1147157c1e8f5a75633660df6b3e}} 
+\index{NucleonStructure.cpp@{NucleonStructure.cpp}!fileslo@{fileslo}}
+\index{fileslo@{fileslo}!NucleonStructure.cpp@{NucleonStructure.cpp}}
+\doxysubsubsection{\texorpdfstring{fileslo}{fileslo}}
+{\footnotesize\ttfamily char fileslo\mbox{[}128\mbox{]}}
+
+
+
+Definition at line 46 of file Nucleon\+Structure.\+cpp.
+
+\mbox{\Hypertarget{NucleonStructure_8cpp_a8b89d7d00e8976aaae5078b8e99279b3}\label{NucleonStructure_8cpp_a8b89d7d00e8976aaae5078b8e99279b3}} 
+\index{NucleonStructure.cpp@{NucleonStructure.cpp}!grsvdir\_@{grsvdir\_}}
+\index{grsvdir\_@{grsvdir\_}!NucleonStructure.cpp@{NucleonStructure.cpp}}
+\doxysubsubsection{\texorpdfstring{grsvdir\_}{grsvdir\_}}
+{\footnotesize\ttfamily struct \{ ... \}  grsvdir\+\_\+}
+
+\mbox{\Hypertarget{NucleonStructure_8cpp_ad4f9974cb2ea878ff1c41c76e5edf531}\label{NucleonStructure_8cpp_ad4f9974cb2ea878ff1c41c76e5edf531}} 
+\index{NucleonStructure.cpp@{NucleonStructure.cpp}!homedir@{homedir}}
+\index{homedir@{homedir}!NucleonStructure.cpp@{NucleonStructure.cpp}}
+\doxysubsubsection{\texorpdfstring{homedir}{homedir}}
+{\footnotesize\ttfamily char homedir\mbox{[}128\mbox{]}}
+
+
+
+Definition at line 25 of file Nucleon\+Structure.\+cpp.
+
+\mbox{\Hypertarget{NucleonStructure_8cpp_ac675972645a55e9fb8101a7a2ed6ffc1}\label{NucleonStructure_8cpp_ac675972645a55e9fb8101a7a2ed6ffc1}} 
+\index{NucleonStructure.cpp@{NucleonStructure.cpp}!iini@{iini}}
+\index{iini@{iini}!NucleonStructure.cpp@{NucleonStructure.cpp}}
+\doxysubsubsection{\texorpdfstring{iini}{iini}}
+{\footnotesize\ttfamily int iini =7}
+
+
+
+Definition at line 52 of file Nucleon\+Structure.\+cpp.
+
+\mbox{\Hypertarget{NucleonStructure_8cpp_a04b7a2a53a4c71fdc3e6ac38dca14aa9}\label{NucleonStructure_8cpp_a04b7a2a53a4c71fdc3e6ac38dca14aa9}} 
+\index{NucleonStructure.cpp@{NucleonStructure.cpp}!intini\_@{intini\_}}
+\index{intini\_@{intini\_}!NucleonStructure.cpp@{NucleonStructure.cpp}}
+\doxysubsubsection{\texorpdfstring{intini\_}{intini\_}}
+{\footnotesize\ttfamily struct \{ ... \}  intini\+\_\+}
+

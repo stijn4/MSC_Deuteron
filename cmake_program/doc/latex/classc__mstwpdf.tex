@@ -1,0 +1,389 @@
+\hypertarget{classc__mstwpdf}{}\doxysection{c\+\_\+mstwpdf Class Reference}
+\label{classc__mstwpdf}\index{c\_mstwpdf@{c\_mstwpdf}}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 44 of file mstwpdf.\+h.
+
+
+
+{\ttfamily \#include $<$mstwpdf.\+h$>$}
+
+
+
+Collaboration diagram for c\+\_\+mstwpdf\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{classc__mstwpdf__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structc__mstwpdf_1_1s__partoncontent}{s\+\_\+partoncontent}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classc__mstwpdf_a58da097368affa3ebd468c091aa05fe2}{c\+\_\+mstwpdf}} (std\+::string filename, bool \mbox{\hyperlink{classc__mstwpdf_a6f6c38b7c602d66c4f138780ceaa7010}{warn}}=false, bool \mbox{\hyperlink{classc__mstwpdf_ad8d8e4ff29d254b2ad13749ef06dde34}{fatal}}=true)
+\item 
+void \mbox{\hyperlink{classc__mstwpdf_a78486c366d53c9f830cf70fc03d5ddfd}{update}} (double x, double q)
+\item 
+double \mbox{\hyperlink{classc__mstwpdf_ab4ea0ca8076ddf1bd3d31936eba5e55a}{parton}} (int flavour, double x, double q)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structc__mstwpdf_1_1s__partoncontent}{c\+\_\+mstwpdf\+::s\+\_\+partoncontent}} \mbox{\hyperlink{classc__mstwpdf_ab7a62d12d14818413b601fa229b5128e}{cont}}
+\item 
+double \mbox{\hyperlink{classc__mstwpdf_a61d09df4f0cee9c7087f905c04d9a3e5}{xmin}}
+\item 
+double \mbox{\hyperlink{classc__mstwpdf_a1dbcdde6a016916db9b4cd4d17c36a60}{xmax}}
+\item 
+double \mbox{\hyperlink{classc__mstwpdf_abade2c8420b5851e26f474f1971fd51f}{qsqmin}}
+\item 
+double \mbox{\hyperlink{classc__mstwpdf_a65b92eda9978bc3c18428fd5ad293f0a}{qsqmax}}
+\item 
+double \mbox{\hyperlink{classc__mstwpdf_a24660a8f955b89de54016b9c493c95e7}{m\+Charm}}
+\item 
+double \mbox{\hyperlink{classc__mstwpdf_a6ddca9ff710f5afc63cdba531399d9e2}{m\+Bottom}}
+\item 
+double \mbox{\hyperlink{classc__mstwpdf_a3289b0f1bd720cc0334fb10f5a440533}{alpha\+S\+Q0}}
+\item 
+double \mbox{\hyperlink{classc__mstwpdf_a5944d482812a4a43f1e16abb0249dc80}{alpha\+S\+MZ}}
+\item 
+double \mbox{\hyperlink{classc__mstwpdf_a4e6bf4d56434a0271c77b3c0d3aeffce}{distance}}
+\item 
+double \mbox{\hyperlink{classc__mstwpdf_a55b82ce265af1f49b222b1a3e4ff4bef}{tolerance}}
+\item 
+int \mbox{\hyperlink{classc__mstwpdf_a4fda422ae632783871dbe257959bcdc7}{alpha\+Sorder}}
+\item 
+int \mbox{\hyperlink{classc__mstwpdf_a055e495290f338e6fa66a2f1afb3cb48}{alpha\+Snfmax}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classc__mstwpdf_af08e15ca61e3221d104cbe2329036c09}{parton\+\_\+interpolate}} (int flavour, double xxx, double qqq)
+\item 
+double \mbox{\hyperlink{classc__mstwpdf_aeec5fc1c160df3904cc68ecf2abd0d31}{parton\+\_\+extrapolate}} (int flavour, double xxx, double qqq)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classc__mstwpdf_a602f333380ac4dbc5b472f16fc70d2de}{nqc0}}
+\item 
+int \mbox{\hyperlink{classc__mstwpdf_a70575fc754e4699fc7475a8728472647}{nqb0}}
+\item 
+double \mbox{\hyperlink{classc__mstwpdf_a433842ddb4118e22a9e92b22c576c112}{c}} \mbox{[}\mbox{\hyperlink{classc__mstwpdf_aaf8db1812d82ab9a7b592bbaadb9cf9b}{np}}+1\mbox{]}\mbox{[}\mbox{\hyperlink{classc__mstwpdf_abf1a0cc1b0616cd90c11794e06f32a31}{nx}}\mbox{]}\mbox{[}\mbox{\hyperlink{classc__mstwpdf_ac15425abb823a28a43e6f5bca9936e5d}{nq}}\mbox{]}\mbox{[}5\mbox{]}\mbox{[}5\mbox{]}
+\item 
+bool \mbox{\hyperlink{classc__mstwpdf_a6f6c38b7c602d66c4f138780ceaa7010}{warn}}
+\item 
+bool \mbox{\hyperlink{classc__mstwpdf_ad8d8e4ff29d254b2ad13749ef06dde34}{fatal}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const static int \mbox{\hyperlink{classc__mstwpdf_aaf8db1812d82ab9a7b592bbaadb9cf9b}{np}} =12
+\item 
+const static int \mbox{\hyperlink{classc__mstwpdf_abf1a0cc1b0616cd90c11794e06f32a31}{nx}} =64
+\item 
+const static int \mbox{\hyperlink{classc__mstwpdf_ac15425abb823a28a43e6f5bca9936e5d}{nq}} =48
+\item 
+static double \mbox{\hyperlink{classc__mstwpdf_a84322b8729f8770b5b6201d88df4289f}{xx}} \mbox{[}\mbox{\hyperlink{classc__mstwpdf_abf1a0cc1b0616cd90c11794e06f32a31}{nx}}+1\mbox{]}
+\item 
+static double \mbox{\hyperlink{classc__mstwpdf_a6cbf3a5a8669529ceb5b16ff7a78cd17}{qq}} \mbox{[}\mbox{\hyperlink{classc__mstwpdf_ac15425abb823a28a43e6f5bca9936e5d}{nq}}+1\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classc__mstwpdf_a58da097368affa3ebd468c091aa05fe2}\label{classc__mstwpdf_a58da097368affa3ebd468c091aa05fe2}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!c\_mstwpdf@{c\_mstwpdf}}
+\index{c\_mstwpdf@{c\_mstwpdf}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{c\_mstwpdf()}{c\_mstwpdf()}}
+{\footnotesize\ttfamily c\+\_\+mstwpdf\+::c\+\_\+mstwpdf (\begin{DoxyParamCaption}\item[{std\+::string}]{filename,  }\item[{bool}]{warn = {\ttfamily false},  }\item[{bool}]{fatal = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 83 of file mstwpdf.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classc__mstwpdf_ab4ea0ca8076ddf1bd3d31936eba5e55a}\label{classc__mstwpdf_ab4ea0ca8076ddf1bd3d31936eba5e55a}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!parton@{parton}}
+\index{parton@{parton}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{parton()}{parton()}}
+{\footnotesize\ttfamily double c\+\_\+mstwpdf\+::parton (\begin{DoxyParamCaption}\item[{int}]{flavour,  }\item[{double}]{x,  }\item[{double}]{q }\end{DoxyParamCaption})}
+
+
+
+Definition at line 553 of file mstwpdf.\+cpp.
+
+\mbox{\Hypertarget{classc__mstwpdf_aeec5fc1c160df3904cc68ecf2abd0d31}\label{classc__mstwpdf_aeec5fc1c160df3904cc68ecf2abd0d31}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!parton\_extrapolate@{parton\_extrapolate}}
+\index{parton\_extrapolate@{parton\_extrapolate}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{parton\_extrapolate()}{parton\_extrapolate()}}
+{\footnotesize\ttfamily double c\+\_\+mstwpdf\+::parton\+\_\+extrapolate (\begin{DoxyParamCaption}\item[{int}]{flavour,  }\item[{double}]{xxx,  }\item[{double}]{qqq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 686 of file mstwpdf.\+cpp.
+
+\mbox{\Hypertarget{classc__mstwpdf_af08e15ca61e3221d104cbe2329036c09}\label{classc__mstwpdf_af08e15ca61e3221d104cbe2329036c09}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!parton\_interpolate@{parton\_interpolate}}
+\index{parton\_interpolate@{parton\_interpolate}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{parton\_interpolate()}{parton\_interpolate()}}
+{\footnotesize\ttfamily double c\+\_\+mstwpdf\+::parton\+\_\+interpolate (\begin{DoxyParamCaption}\item[{int}]{flavour,  }\item[{double}]{xxx,  }\item[{double}]{qqq }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 665 of file mstwpdf.\+cpp.
+
+\mbox{\Hypertarget{classc__mstwpdf_a78486c366d53c9f830cf70fc03d5ddfd}\label{classc__mstwpdf_a78486c366d53c9f830cf70fc03d5ddfd}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!update@{update}}
+\index{update@{update}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void c\+\_\+mstwpdf\+::update (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{q }\end{DoxyParamCaption})}
+
+
+
+Definition at line 520 of file mstwpdf.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classc__mstwpdf_a5944d482812a4a43f1e16abb0249dc80}\label{classc__mstwpdf_a5944d482812a4a43f1e16abb0249dc80}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!alphaSMZ@{alphaSMZ}}
+\index{alphaSMZ@{alphaSMZ}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{alphaSMZ}{alphaSMZ}}
+{\footnotesize\ttfamily double c\+\_\+mstwpdf\+::alpha\+S\+MZ}
+
+
+
+Definition at line 51 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_a055e495290f338e6fa66a2f1afb3cb48}\label{classc__mstwpdf_a055e495290f338e6fa66a2f1afb3cb48}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!alphaSnfmax@{alphaSnfmax}}
+\index{alphaSnfmax@{alphaSnfmax}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{alphaSnfmax}{alphaSnfmax}}
+{\footnotesize\ttfamily int c\+\_\+mstwpdf\+::alpha\+Snfmax}
+
+
+
+Definition at line 53 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_a4fda422ae632783871dbe257959bcdc7}\label{classc__mstwpdf_a4fda422ae632783871dbe257959bcdc7}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!alphaSorder@{alphaSorder}}
+\index{alphaSorder@{alphaSorder}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{alphaSorder}{alphaSorder}}
+{\footnotesize\ttfamily int c\+\_\+mstwpdf\+::alpha\+Sorder}
+
+
+
+Definition at line 53 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_a3289b0f1bd720cc0334fb10f5a440533}\label{classc__mstwpdf_a3289b0f1bd720cc0334fb10f5a440533}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!alphaSQ0@{alphaSQ0}}
+\index{alphaSQ0@{alphaSQ0}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{alphaSQ0}{alphaSQ0}}
+{\footnotesize\ttfamily double c\+\_\+mstwpdf\+::alpha\+S\+Q0}
+
+
+
+Definition at line 51 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_a433842ddb4118e22a9e92b22c576c112}\label{classc__mstwpdf_a433842ddb4118e22a9e92b22c576c112}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!c@{c}}
+\index{c@{c}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily double c\+\_\+mstwpdf\+::c\mbox{[}\mbox{\hyperlink{classc__mstwpdf_aaf8db1812d82ab9a7b592bbaadb9cf9b}{np}}+1\mbox{]}\mbox{[}\mbox{\hyperlink{classc__mstwpdf_abf1a0cc1b0616cd90c11794e06f32a31}{nx}}\mbox{]}\mbox{[}\mbox{\hyperlink{classc__mstwpdf_ac15425abb823a28a43e6f5bca9936e5d}{nq}}\mbox{]}\mbox{[}5\mbox{]}\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 65 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_ab7a62d12d14818413b601fa229b5128e}\label{classc__mstwpdf_ab7a62d12d14818413b601fa229b5128e}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!cont@{cont}}
+\index{cont@{cont}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{cont}{cont}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structc__mstwpdf_1_1s__partoncontent}{c\+\_\+mstwpdf\+::s\+\_\+partoncontent}} c\+\_\+mstwpdf\+::cont}
+
+\mbox{\Hypertarget{classc__mstwpdf_a4e6bf4d56434a0271c77b3c0d3aeffce}\label{classc__mstwpdf_a4e6bf4d56434a0271c77b3c0d3aeffce}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!distance@{distance}}
+\index{distance@{distance}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{distance}{distance}}
+{\footnotesize\ttfamily double c\+\_\+mstwpdf\+::distance}
+
+
+
+Definition at line 52 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_ad8d8e4ff29d254b2ad13749ef06dde34}\label{classc__mstwpdf_ad8d8e4ff29d254b2ad13749ef06dde34}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!fatal@{fatal}}
+\index{fatal@{fatal}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{fatal}{fatal}}
+{\footnotesize\ttfamily bool c\+\_\+mstwpdf\+::fatal\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 68 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_a6ddca9ff710f5afc63cdba531399d9e2}\label{classc__mstwpdf_a6ddca9ff710f5afc63cdba531399d9e2}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!mBottom@{mBottom}}
+\index{mBottom@{mBottom}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{mBottom}{mBottom}}
+{\footnotesize\ttfamily double c\+\_\+mstwpdf\+::m\+Bottom}
+
+
+
+Definition at line 51 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_a24660a8f955b89de54016b9c493c95e7}\label{classc__mstwpdf_a24660a8f955b89de54016b9c493c95e7}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!mCharm@{mCharm}}
+\index{mCharm@{mCharm}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{mCharm}{mCharm}}
+{\footnotesize\ttfamily double c\+\_\+mstwpdf\+::m\+Charm}
+
+
+
+Definition at line 51 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_aaf8db1812d82ab9a7b592bbaadb9cf9b}\label{classc__mstwpdf_aaf8db1812d82ab9a7b592bbaadb9cf9b}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!np@{np}}
+\index{np@{np}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{np}{np}}
+{\footnotesize\ttfamily const static int c\+\_\+mstwpdf\+::np =12\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 58 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_ac15425abb823a28a43e6f5bca9936e5d}\label{classc__mstwpdf_ac15425abb823a28a43e6f5bca9936e5d}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!nq@{nq}}
+\index{nq@{nq}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{nq}{nq}}
+{\footnotesize\ttfamily const static int c\+\_\+mstwpdf\+::nq =48\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 60 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_a70575fc754e4699fc7475a8728472647}\label{classc__mstwpdf_a70575fc754e4699fc7475a8728472647}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!nqb0@{nqb0}}
+\index{nqb0@{nqb0}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{nqb0}{nqb0}}
+{\footnotesize\ttfamily int c\+\_\+mstwpdf\+::nqb0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 62 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_a602f333380ac4dbc5b472f16fc70d2de}\label{classc__mstwpdf_a602f333380ac4dbc5b472f16fc70d2de}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!nqc0@{nqc0}}
+\index{nqc0@{nqc0}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{nqc0}{nqc0}}
+{\footnotesize\ttfamily int c\+\_\+mstwpdf\+::nqc0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 61 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_abf1a0cc1b0616cd90c11794e06f32a31}\label{classc__mstwpdf_abf1a0cc1b0616cd90c11794e06f32a31}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!nx@{nx}}
+\index{nx@{nx}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{nx}{nx}}
+{\footnotesize\ttfamily const static int c\+\_\+mstwpdf\+::nx =64\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 59 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_a6cbf3a5a8669529ceb5b16ff7a78cd17}\label{classc__mstwpdf_a6cbf3a5a8669529ceb5b16ff7a78cd17}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!qq@{qq}}
+\index{qq@{qq}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{qq}{qq}}
+{\footnotesize\ttfamily double c\+\_\+mstwpdf\+::qq\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 64 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_a65b92eda9978bc3c18428fd5ad293f0a}\label{classc__mstwpdf_a65b92eda9978bc3c18428fd5ad293f0a}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!qsqmax@{qsqmax}}
+\index{qsqmax@{qsqmax}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{qsqmax}{qsqmax}}
+{\footnotesize\ttfamily double c\+\_\+mstwpdf\+::qsqmax}
+
+
+
+Definition at line 50 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_abade2c8420b5851e26f474f1971fd51f}\label{classc__mstwpdf_abade2c8420b5851e26f474f1971fd51f}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!qsqmin@{qsqmin}}
+\index{qsqmin@{qsqmin}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{qsqmin}{qsqmin}}
+{\footnotesize\ttfamily double c\+\_\+mstwpdf\+::qsqmin}
+
+
+
+Definition at line 50 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_a55b82ce265af1f49b222b1a3e4ff4bef}\label{classc__mstwpdf_a55b82ce265af1f49b222b1a3e4ff4bef}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!tolerance@{tolerance}}
+\index{tolerance@{tolerance}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{tolerance}{tolerance}}
+{\footnotesize\ttfamily double c\+\_\+mstwpdf\+::tolerance}
+
+
+
+Definition at line 52 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_a6f6c38b7c602d66c4f138780ceaa7010}\label{classc__mstwpdf_a6f6c38b7c602d66c4f138780ceaa7010}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!warn@{warn}}
+\index{warn@{warn}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{warn}{warn}}
+{\footnotesize\ttfamily bool c\+\_\+mstwpdf\+::warn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 68 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_a1dbcdde6a016916db9b4cd4d17c36a60}\label{classc__mstwpdf_a1dbcdde6a016916db9b4cd4d17c36a60}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!xmax@{xmax}}
+\index{xmax@{xmax}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{xmax}{xmax}}
+{\footnotesize\ttfamily double c\+\_\+mstwpdf\+::xmax}
+
+
+
+Definition at line 50 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_a61d09df4f0cee9c7087f905c04d9a3e5}\label{classc__mstwpdf_a61d09df4f0cee9c7087f905c04d9a3e5}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!xmin@{xmin}}
+\index{xmin@{xmin}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{xmin}{xmin}}
+{\footnotesize\ttfamily double c\+\_\+mstwpdf\+::xmin}
+
+
+
+Definition at line 50 of file mstwpdf.\+h.
+
+\mbox{\Hypertarget{classc__mstwpdf_a84322b8729f8770b5b6201d88df4289f}\label{classc__mstwpdf_a84322b8729f8770b5b6201d88df4289f}} 
+\index{c\_mstwpdf@{c\_mstwpdf}!xx@{xx}}
+\index{xx@{xx}!c\_mstwpdf@{c\_mstwpdf}}
+\doxysubsubsection{\texorpdfstring{xx}{xx}}
+{\footnotesize\ttfamily double c\+\_\+mstwpdf\+::xx\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 63 of file mstwpdf.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{mstwpdf_8h}{mstwpdf.\+h}}\item 
+src/\mbox{\hyperlink{mstwpdf_8cpp}{mstwpdf.\+cpp}}\end{DoxyCompactItemize}
