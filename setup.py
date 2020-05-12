@@ -26,6 +26,7 @@ else:
 
 
 #platform dependend commands
+subprocess.run("mkdir build",shell=True,cwd=os.path.join(os.getcwd(), "cmake_program"),stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
 pip_command = "-m pip install"
 cmake_command1 = os.path.join(os.getcwd(), "cmake_program","build")
 cmake_command2 = '-DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_COMPILER=gcc -DCMAKE_BUILD_TYPE=Release ../'
