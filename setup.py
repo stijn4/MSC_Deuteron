@@ -24,7 +24,10 @@ else:
     x = raw_input("press key to exit")
     sys.exit(0)
 
+#make notebook output folder
+subprocess.run("mkdir output", cwd = os.path.join(os.getcwd(),"Notebooks"))
 
+#cmake commands
 #platform dependend commands
 subprocess.run("mkdir build",shell=True,cwd=os.path.join(os.getcwd(), "cmake_program"),stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
 pip_command = "-m pip install"
