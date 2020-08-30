@@ -25,7 +25,7 @@ else:
     sys.exit(0)
 
 #make notebook output folder
-subprocess.run("mkdir output", cwd = os.path.join(os.getcwd(),"Notebooks"))
+subprocess.run("mkdir output", shell=True, cwd = os.path.join(os.getcwd(),"Notebooks"))
 
 #cmake commands
 #platform dependend commands

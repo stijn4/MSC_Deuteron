@@ -52,7 +52,7 @@
 #define M_W 80385 //W boson [MeV]
 #define COS_CAB 0.97427 //V_ud cosine of Cabbibo angle
 
-#define HOMEDIR "C:/Users/vange/Desktop/masterthesis/jupyter_notebooks/Upload/cmake_program/share"
+#define HOMEDIR "C:/Users/vange/Desktop/masterthesis/jupyter_notebooks/MSC_Deuteron_upload/cmake_program/share"
 
 
 #endif
